@@ -21,17 +21,17 @@
     </header>
 
     <main>
-        <form action="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%BA%D1%96">
-            <fildset class="info">
+        <form action="#">
+            <fildset style="border: 1px solid green">
                 <legend>Personal info</legend>
                 <label>Name <input type="text" name="name" placeholder="Enter your name" required/></label><br>
                 <label>Email <input type="email" name="email" placeholder="Enter your email" required/></label><br>
                 <label>Age <input type="number" name="age" min="16" max="100" required/></label>
             </fildset>
-            <fildset class="info-student">
+            <fildset style="border: 1px solid green">
                 <legend>Are you a student?</legend>
-                    <label><input type="radio" name="study"> Yes</label>
-                    <label><input type="radio" name="study"> No</label>
+                    <label><input type="radio" name="study" value="yes"> Yes</label>
+                    <label><input type="radio" name="study" value="no"> No</label>
             </fildset>    
                 <label>Do you have any questions?<br> 
                     <textarea rows="4" cols="20" name="question" placeholder="How long...?">
