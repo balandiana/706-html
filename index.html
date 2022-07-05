@@ -21,22 +21,25 @@
     </header>
 
     <main>
-        <fildset class="info"></fildset>
-            <form action="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%BA%D1%96">
+        <form action="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%BA%D1%96">
+            <fildset class="info">
+                <legend>Personal info</legend>
                 <label>Name <input type="text" name="name" placeholder="Enter your name" required/></label><br>
                 <label>Email <input type="email" name="email" placeholder="Enter your email" required/></label><br>
                 <label>Age <input type="number" name="age" min="16" max="100" required/></label>
-                <p>Are you a student?</p>
+            </fildset>
+            <fildset class="info-student">
+                <legend>Are you a student?</legend>
                     <label><input type="radio" name="study"> Yes</label>
-                    <label><input type="radio" name="study"> No</label><br>
+                    <label><input type="radio" name="study"> No</label>
+            </fildset>    
                 <label>Do you have any questions?<br> 
                     <textarea rows="4" cols="20" name="question" placeholder="How long...?">
                     </textarea>
                 </label><br>
                 <label>I agree to the terms of use and privacy policy?<input type="checkbox" name="terms" required></label><br>
-                <button type="submit">SUBMIT</button>
-            </form>
-        </fildset>
+                <button type="submit">SUBMIT</button>                                                                                                          
+        </form>
             <hr>
 
         <div class="topics">
@@ -63,7 +66,7 @@
             </section>
             <section id="topic3">
                 <header><h3>Topic - 3</h3></header>
-                <table style="border: 2px solid black;">
+                <table style="border: 2px solid red;">
                     <caption>Table</caption>
                     <thead>
                         <tr>
